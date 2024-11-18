@@ -1,0 +1,139 @@
+/* Estilos gerais */
+*{
+    margin: 0;
+    padding: 0;
+    bottom: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #5b5b5b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #fefefe;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+
+h2 {
+    color: #333;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Inputs e botão */
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #454545;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #4a90e2;
+}
+
+button {
+    padding: 10px;
+    background-color: #4a90e2;
+    border: none;
+    color: #000000;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #357ABD;
+}
+
+/* Lista de contatos */
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+li {
+    background-color: #2c2c2c;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+li:hover {
+    background-color: #000000;
+}
+
+/* Estilo dos nomes e telefones */
+strong {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+/* Botão de remover */
+li button {
+    background-color: #e74c3c;
+    border: none;
+    padding: 5px 10px;
+    color: #ffffff;
+    font-size: 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 20px 10px;
+}
+
+li button:hover {
+    background-color: #c0392b;
+}
+
+/* Mensagem de erro */
+p {
+    color: #e74c3c;
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    input[type="text"], button {
+        font-size: 14px;
+    }
+}
